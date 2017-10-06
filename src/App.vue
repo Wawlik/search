@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <div class="logo">
-        <img src="../static/logo.png" alt="Logo">
+        <img :src="logo" alt="Logo">
       </div>
       <search></search>
     </header>
@@ -13,13 +13,18 @@
 </template>
 
 <script>
+import logo from '../static/logo.png'
 import Search from '../components/Search.vue'
 import Result from '../components/Result.vue'
 
 export default {
   name: 'app',
-  components: { Search, Result }
-  
+  components: { Search, Result },
+  data() {
+    return { 
+      logo 
+    }
+  }
 }
 </script>
 <style src="../static/style.css"></style>
