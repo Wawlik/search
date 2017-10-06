@@ -2,7 +2,7 @@
   <div id="app">
     <header>
       <div class="logo">
-        <img :src="logo" alt="Logo">
+        <img src="https://i.imgur.com/WoCZlYa.png" alt="Logo">
       </div>
       <search></search>
     </header>
